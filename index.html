@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>কুইজ অ্যাপ - মেইনটেন্যান্স</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        overflow: hidden;
+        background: linear-gradient(270deg, #1e3c72, #2a5298, #4a90e2, #9013fe);
+        background-size: 800% 800%;
+        animation: bgShift 12s ease infinite;
+      }
+
+      @keyframes bgShift {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .card {
+        position: relative;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 50px 30px;
+        border-radius: 20px;
+        backdrop-filter: blur(15px);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+        max-width: 600px;
+        width: 90%;
+        z-index: 2;
+        animation: fadeSlide 1.5s ease forwards;
+        transform: translateY(30px);
+        opacity: 0;
+      }
+
+      @keyframes fadeSlide {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .icon {
+        font-size: 90px;
+        margin-bottom: 20px;
+        display: inline-block;
+        animation: spin 5s linear infinite, pulse 2s ease-in-out infinite;
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+          transform: scale(1);
+        }
+        50% {
+          text-shadow: 0 0 25px rgba(255, 255, 255, 1);
+          transform: scale(1.1);
+        }
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        opacity: 0;
+        animation: fadeInUp 1.5s 0.5s ease forwards;
+      }
+
+      p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        opacity: 0;
+        animation: fadeInUp 1.5s 1s ease forwards;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Animated floating dots background */
+      .dot {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background: rgba(255, 255, 255, 0.6);
+        border-radius: 50%;
+        bottom: -20px;
+        animation: floatUp 6s linear infinite;
+      }
+
+      @keyframes floatUp {
+        from {
+          transform: translateY(0) scale(1);
+          opacity: 1;
+        }
+        to {
+          transform: translateY(-120vh) scale(0.5);
+          opacity: 0;
+        }
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+        .icon {
+          font-size: 70px;
+        }
+      }
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 1.6rem;
+        }
+        p {
+          font-size: 0.9rem;
+        }
+        .icon {
+          font-size: 60px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Background dots -->
+    <div class="dot" style="left: 20%; animation-delay: 0s"></div>
+    <div class="dot" style="left: 50%; animation-delay: 2s"></div>
+    <div class="dot" style="left: 80%; animation-delay: 4s"></div>
+    <div class="dot" style="left: 35%; animation-delay: 3s"></div>
+    <div class="dot" style="left: 65%; animation-delay: 1s"></div>
+
+    <div class="card">
+      <div class="icon"></div>
+      <h1>আমরা শীঘ্রই ফিরে আসবো!</h1>
+      <p>
+        আমাদের <b>কুইজ অ্যাপ</b> বর্তমানে রক্ষণাবেক্ষণের কাজে রয়েছে। খুব শিগগিরই
+        আরও নতুন রূপে ফিরে আসছে। অনুগ্রহ করে আমাদের সাথে থাকুন। ❤️
+      </p>
+    </div>
+  </body>
+</html>
