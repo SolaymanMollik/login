@@ -1,0 +1,114 @@
+/* allura */
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Text:ital@0;1&display=swap');
+/* font-family: "Eagle Lake", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Text:ital@0;1&family=Eagle+Lake&display=swap');
+
+*,
+*::after,
+*::before,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-style: normal;
+}
+body {
+  min-height: 100vh;
+  background-image: url(../img/abstract-digital-grid-black-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  font-family: sans-serif;
+}
+.btn-div {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical alignment */
+  align-items: center; /* horizontal center */
+  gap: 1rem;
+}
+.main-h {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+}
+@media (max-width: 600px) {
+  .main-h {
+    font-size: 2rem;
+  }
+}
+
+.reg-and-log-btn {
+  width: 12rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, #111, #222); /* ডার্ক গ্রেডিয়েন্ট */
+  color: #f1f1f1;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  border: 1 px solid #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hover effect */
+.reg-and-log-btn:hover {
+  background: linear-gradient(135deg, #222, #111);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+}
+
+/* Active (click) effect */
+.reg-and-log-btn:active {
+  transform: scale(0.96);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+}
+.copy {
+  width: 100%;
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+}
+.copy > p {
+  text-align: center;
+  font-family: eagle-lake;
+  color: #fff;
+}
+/* Popup container */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+/* Show popup */
+.popup.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* fonts */
+.allura {
+  font-family: 'Allura', cursive;
+}
+.eagle-lake {
+  font-family: 'Eagle Lake', serif;
+}

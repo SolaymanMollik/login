@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registation</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      /* ======== inp ========= */
+      .custom-input {
+        width: 20rem;
+        padding: 1rem;
+        background: linear-gradient(135deg, #111, #222); /* ডার্ক গ্রেডিয়েন্ট */
+        color: #f1f1f1;
+        font-size: 1rem;
+        font-weight: 500;
+        border: 1px solid #fff;
+        border-radius: 50px;
+        outline: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        text-align: center; /* টেক্সট মাঝখানে */
+      }
+
+      /* Placeholder style */
+      .custom-input::placeholder {
+        color: #aaa;
+        font-weight: 400;
+      }
+
+      /* Focus effect */
+      .custom-input:focus {
+        border-color: #1e90ff;
+        box-shadow: 0 0 10px #1e90ff, 0 4px 15px rgba(0, 0, 0, 0.8);
+        background: linear-gradient(135deg, #222, #111);
+      }
+      /* ======== btn ========= */
+      .custom-btn {
+        width: 20rem;
+        padding: 1rem;
+        background: linear-gradient(135deg, #111, #222); /* ডার্ক গ্রেডিয়েন্ট */
+        color: #f1f1f1;
+        font-size: 1rem;
+        font-weight: 600;
+        text-align: center;
+        border: 1px solid #fff;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* Hover effect */
+      .custom-btn:hover {
+        background: linear-gradient(135deg, #222, #111);
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+      }
+
+      /* Active (click) effect */
+      .custom-btn:active {
+        transform: scale(0.96);
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="btn-div">
+      <h1 class="main-h eagle-lake">Please Signup</h1>
+      <input
+        type="number"
+        class="custom-input eagle-lake"
+        id="mainCode"
+        placeholder="Enter The Coupon Code"
+      />
+      <input
+        type="number"
+        class="custom-input eagle-lake"
+        id="secret"
+        placeholder="Enter The Secret Code"
+      />
+
+      <p class="custom-btn" id="btn">Signup</p>
+    </div>
+    <div class="copy">
+      <p>&copy Barishal Uddokta Society</p>
+    </div>
+
+    <script src="../js/reg.js"></script>
+  </body>
+</html>
