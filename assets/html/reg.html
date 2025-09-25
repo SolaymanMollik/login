@@ -9,8 +9,8 @@
       /* ======== inp ========= */
       .custom-input {
         width: 20rem;
-        padding: 1rem;
-        background: linear-gradient(135deg, #111, #222); /* ডার্ক গ্রেডিয়েন্ট */
+        padding: 0.65rem 1rem;
+        background: linear-gradient(135deg, #111, #222);
         color: #f1f1f1;
         font-size: 1rem;
         font-weight: 500;
@@ -19,7 +19,7 @@
         outline: none;
         transition: all 0.3s ease;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
-        text-align: center; /* টেক্সট মাঝখানে */
+        text-align: center;
       }
 
       /* Placeholder style */
@@ -69,12 +69,24 @@
   </head>
   <body>
     <div class="btn-div">
-      <h1 class="main-h eagle-lake">Please Signup</h1>
+      <h1 class="main-h eagle-lake">Please Registration</h1>
+      <input
+        type="text"
+        class="custom-input eagle-lake"
+        id="userName"
+        placeholder="Enter Your Name"
+      />
+      <input
+        type="number"
+        class="custom-input eagle-lake"
+        id="agentCode"
+        placeholder="Enter The 4 digit Code"
+      />
       <input
         type="number"
         class="custom-input eagle-lake"
         id="mainCode"
-        placeholder="Enter The Coupon Code"
+        placeholder="Enter The 10 Digit Code"
       />
       <input
         type="number"
@@ -82,13 +94,196 @@
         id="secret"
         placeholder="Enter The Secret Code"
       />
+      <input
+        type="number"
+        class="custom-input eagle-lake"
+        id="pass1"
+        placeholder="Enter A New Password"
+      />
+      <input
+        type="number"
+        class="custom-input eagle-lake"
+        id="pass2"
+        placeholder="Retype ThePassword"
+      />
 
-      <p class="custom-btn" id="btn">Signup</p>
+      <p class="custom-btn" id="btn">Registation</p>
     </div>
     <div class="copy">
       <p>&copy Barishal Uddokta Society</p>
     </div>
 
-    <script src="../js/reg.js"></script>
+    <!-- <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-27.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-31.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-35.js"
+    ></script> -->
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-1.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-3.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-5.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-7.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-9.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-11.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-13.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-15.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-17.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-19.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-21.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-23.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-25.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-27.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-29.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-31.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-33.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-35.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-37.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-39.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-41.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-43.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-45.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-47.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-49.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-51.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-53.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-55.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-57.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-59.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-61.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-63.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-65.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-67.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-69.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-71.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-73.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-75.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-77.js"
+    ></script>
+    <script
+      type="module"
+      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-79.js"
+    ></script>
   </body>
 </html>

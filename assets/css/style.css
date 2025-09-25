@@ -11,7 +11,6 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-style: normal;
-  
 }
 body {
   min-height: 100vh;
@@ -21,7 +20,6 @@ body {
   background-position: center;
   position: relative;
   font-family: sans-serif;
-  background-color: #000;
 }
 .btn-div {
   width: 100%;
