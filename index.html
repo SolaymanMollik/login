@@ -7,13 +7,42 @@
     <link rel="stylesheet" href="assets/css/style.css">
   <body >
 <div class="btn-div">
+  <div id="countdown" class="eagle-lake" style="font-size: 2rem; font-weight: bold;"></div>
+  
     <h1 class="main-h eagle-lake">Welcome To Saradioa Quiz Compitation</h1>
     <a href="assets/html/reg.html"><p class="reg-and-log-btn eagle-lake">Registration</p></a>
     <p class="reg-and-log-btn eagle-lake">Play Quiz</p>
 </div>
+
+
 <div class="copy alluara">
     <p>&copy Barishal Uddokta Society</p>
 </div>
+<script>
+  // Target Date
+  const targetDate = new Date("October 05, 2025 00:00:00").getTime();
+
+  // Update every 1 second
+  setInterval(() => {
+    const now = new Date().getTime();
+    const diff = targetDate - now;
+
+    if (diff <= 0) {
+      document.getElementById("countdown").innerHTML = "🎉 Time Reached!";
+      return;
+    }
+
+    // Convert
+    const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const s = Math.floor((diff % (1000 * 60)) / 1000);
+
+    // Show
+    document.getElementById("countdown").innerHTML =
+      d + "d : " + h + "h : " + m + "m : " + s + "s";
+  }, 1000);
+</script>
 <script>
     document.addEventListener('keydown', function(e) {
         if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
@@ -30,11 +59,11 @@
     }
 });
 // Disable right-click
-document.addEventListener('contextmenu', (e) => e.preventDefault());
+// document.addEventListener('contextmenu', (e) => e.preventDefault());
 
-function ctrlShiftKey(e, keyCode) {
-  return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
-}
+// function ctrlShiftKey(e, keyCode) {
+//   return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+// }
 
 document.onkeydown = (e) => {
   // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
