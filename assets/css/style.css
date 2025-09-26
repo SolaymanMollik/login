@@ -6,11 +6,33 @@
 *,
 *::after,
 *::before,
-body {
+body,
+html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-style: normal;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* overlay shown when devtools detected */
+#devOverlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  z-index: 99999;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
 }
 body {
   min-height: 100vh;
@@ -79,7 +101,7 @@ body {
 }
 .copy > p {
   text-align: center;
-  font-family: eagle-lake;
+  font-family: allura;
   color: #fff;
 }
 /* Popup container */

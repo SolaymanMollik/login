@@ -8,7 +8,7 @@
     <style>
       /* ======== inp ========= */
       .custom-input {
-        width: 20rem;
+        width: 90vw;
         padding: 0.65rem 1rem;
         background: linear-gradient(135deg, #111, #222);
         color: #f1f1f1;
@@ -36,7 +36,7 @@
       }
       /* ======== btn ========= */
       .custom-btn {
-        width: 20rem;
+        width: 90vw;
         padding: 1rem;
         background: linear-gradient(135deg, #111, #222); /* ডার্ক গ্রেডিয়েন্ট */
         color: #f1f1f1;
@@ -107,24 +107,52 @@
         placeholder="Retype ThePassword"
       />
 
-      <p class="custom-btn" id="btn">Registation</p>
+      <p class="custom-btn eagle-lake" id="btn">Registration</p>
     </div>
     <div class="copy">
       <p>&copy Barishal Uddokta Society</p>
     </div>
+    <script>
+      document.addEventListener('keydown', function (e) {
+        if (
+          e.ctrlKey &&
+          (e.keyCode === 67 ||
+            e.keyCode === 86 ||
+            e.keyCode === 85 ||
+            e.keyCode === 117)
+        ) {
+          alert('Copying is not allowed!');
+          e.preventDefault();
+        }
+      });
+      document.addEventListener('keydown', function (event) {
+        if (event.ctrlKey) {
+          event.preventDefault();
+        }
+        if (event.keyCode == 123) {
+          event.preventDefault();
+        }
+      });
+      // Disable right-click
+      document.addEventListener('contextmenu', (e) => e.preventDefault());
 
-    <!-- <script
-      type="module"
-      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-27.js"
-    ></script>
-    <script
-      type="module"
-      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-31.js"
-    ></script>
-    <script
-      type="module"
-      src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-35.js"
-    ></script> -->
+      function ctrlShiftKey(e, keyCode) {
+        return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+      }
+
+      document.onkeydown = (e) => {
+        // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+        if (
+          event.keyCode === 123 ||
+          ctrlShiftKey(e, 'I') ||
+          ctrlShiftKey(e, 'J') ||
+          ctrlShiftKey(e, 'C') ||
+          (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+        )
+          return false;
+      };
+    </script>
+
     <script
       type="module"
       src="../js/font-awesome,goolefonttrue-tailwind-bootstrap-html--min-advance-classes-of-fonts-1.js"
